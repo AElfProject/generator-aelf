@@ -1,0 +1,57 @@
+{
+  "name": "generator-aelf",
+  "version": "0.1.0",
+  "description": "AElf web generator",
+  "homepage": "https://github.com/AElfProject/generator-aelf",
+  "author": {
+    "name": "atom-young",
+    "email": "atom.yang@aelf.io",
+    "url": "https://github.com/atom-yang"
+  },
+  "files": [
+    "generators"
+  ],
+  "main": "generators/index.js",
+  "keywords": [
+    "yeoman-generator",
+    "aelf",
+    "blockchain"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "yeoman-test": "^1.7.0",
+    "yeoman-assert": "^3.1.0",
+    "eslint": "^6.6.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-babel": "^5.3.0",
+    "eslint-plugin-import": "^2.21.2",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.3",
+    "jest": "^24.8.0"
+  },
+  "engines": {
+    "npm": ">= 4.0.0"
+  },
+  "dependencies": {
+    "yeoman-generator": "^2.0.1",
+    "chalk": "^2.1.0",
+    "inquirer": "^7.2.0",
+    "yosay": "^2.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "lint-staged": {
+    "app/*.js": [
+      "eslint"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "scripts": {},
+  "repository": "AElfProject/generator-aelf",
+  "license": "MIT"
+}

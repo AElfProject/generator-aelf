@@ -1,0 +1,5 @@
+/**
+ * @file constants
+ */
+
+module.exports = {};

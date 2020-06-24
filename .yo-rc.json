@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "atom-young",
+      "authorEmail": "atom.yang@aelf.io",
+      "authorUrl": ""
+    }
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "target": "http://127.0.0.1:8000",
+    "context": [
+      "/api/blockChain"
+    ],
+    "headers": {},
+    "changeOrigin": true,
+    "secure": false
+  },
+  {
+    "target": "http://127.0.0.1:<%= serverPort %>",
+    "context": [
+      "/api"
+    ],
+    "headers": {
+      "Host": "test.aelf.io"
+    }
+  }
+]

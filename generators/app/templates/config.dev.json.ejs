@@ -1,0 +1,19 @@
+{
+<% if (typeof database != "undefined") { %>
+  "sql": {
+  "host": "127.0.0.1",
+  "port": "3306",
+  "user": "root",
+  "password": "password",
+  "database": "<%= database %>",
+  "connectionLimit": 10
+  },
+<% } %>
+  "scan": {
+  "interval": 20000,
+  "concurrentQueryLimit": 5,
+  "host": "http://127.0.0.1:8000",
+  "buffer": 100,
+  "maxInsert": 20
+  }
+}
