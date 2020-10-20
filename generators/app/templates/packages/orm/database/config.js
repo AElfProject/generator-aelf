@@ -1,8 +1,8 @@
 /**
  * @file migrate config
  */
-const developmentConfig = require('../../../config.dev.json.ejs');
-const prodConfig = require('../../../config.prod.json.ejs');
+const developmentConfig = require('../../../config.dev.json');
+const prodConfig = require('../../../config.prod.json');
 
 module.exports = {
   development: {

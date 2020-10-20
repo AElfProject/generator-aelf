@@ -190,6 +190,21 @@ module.exports = class extends Generator {
           from: 'package.json'
         },
         {
+          from: '.browserslistrc'
+        },
+        {
+          from: '.eslintignore'
+        },
+        {
+          from: '.eslintrc'
+        },
+        {
+          from: '.gitignore'
+        },
+        {
+          from: 'postcss.config.js'
+        },
+        {
           from: 'README.md'
         },
         {
@@ -200,6 +215,9 @@ module.exports = class extends Generator {
         },
         {
           from: 'build/config.js'
+        },
+        {
+          from: 'build/util.js'
         },
         {
           from: 'build/webpack.dev.js'
@@ -220,6 +238,9 @@ module.exports = class extends Generator {
     const ormCopies = [
       {
         from: 'package.json'
+      },
+      {
+        from: '.sequelizerc'
       }
     ];
     this._copyTemplate('packages/orm', `packages/${name}-orm`, ormCopies);
@@ -244,6 +265,15 @@ module.exports = class extends Generator {
         },
         {
           from: 'app/router.js'
+        },
+        {
+          from: 'app.js'
+        },
+        {
+          from: '.eslintrc'
+        },
+        {
+          from: '.gitignore'
         }
       ];
       this._copyTemplate('packages/api', `packages/${name}-api`, apiCopies);
